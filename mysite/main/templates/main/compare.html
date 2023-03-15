@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=~, initial-scale=1.0">
+    <title>Compare</title>
+</head>
+<header>
+    <h1>Compare</h1>
+    <hr>
+</header>
+<body>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            <input type="str" name="number1" id="" placeholder="Enter numbers">
+            <input type="str" name="number2" id="" placeholder="Enter numbers">
+            <button type="submit">compare</button>
+        </form>
+    <div>
+
+    <div>
+        <hr>
+        <h4>Result = {{ res }}</h4>
+    </div>
+</body>
+</html>
